@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "card.html",
+    "href": "card.html",
+    "title": "card - A basic playing card",
+    "section": "",
+    "text": "suits[2]\n\n'♥️'\n\n\n\nThese are the ranks\n\nranks\n\n[None, 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']\n\n\n\nc = Card(suite=1, rank=3)\n\n\nc\n\n3♦️\n\n\n\nprint(c)\n\n3♦️\n\n\n\nsource\n\n\nCard\n\n Card (suite:int, rank:int)\n\nA playing card\n\n\n\n\nType\nDetails\n\n\n\n\nsuite\nint\nAn index into suits\n\n\nrank\nint\nAn index into ranks\n\n\n\n\nfrom execnb.nbio import dict2nb\n\n\nsource\n\n\ndict2nb\n\n dict2nb (js=None, **kwargs)\n\nConvert dict js to an AttrDict,\nEquality, less than and greater than on cards\n\ntest_eq??\n\n\nsource\n\n\nf\n\n f (a, b)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev_cards",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdev_cards",
+    "section": "Install",
+    "text": "Install\npip install nbdev_cards"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev_cards",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2\n\n\n\nsuits\n\n['♣️', '♦️', '♥️', '♠️']"
+  },
+  {
+    "objectID": "deck.html",
+    "href": "deck.html",
+    "title": "deck",
+    "section": "",
+    "text": "# f(1, 2)\n\n\nsource\n\nDeck\n\n Deck ()\n\nA deck of 52 cards not including jokers\nWhen we initially create a deck, all of the cards will be present\n\ndeck = Deck()\n\n\nlen(deck)\n\n52\n\n\n\nCard(1, 1) in deck\n\nTrue\n\n\n\nCard(1, 15) in deck\n\nFalse\n\n\n\ntest_eq(len(deck), 52)\n\n\nsource\n\n\nDeck.pop\n\n Deck.pop (idx:int=-1)\n\nRemove one card\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nidx\nint\n-1\nindex of card to remove, defaults to last one\n\n\n\n\ndeck.pop()\n\nK♠️\n\n\n\nsource\n\n\nDeck.remove\n\n Deck.remove (card:nbdev_cards.card.Card)\n\n\nrandom.choice??\n\n\nsource\n\n\ndraw_n\n\n draw_n (n:int, replace:bool=True)\n\n\ndraw_n(13, replace=True)\n\n[A♥️, 7♥️, 7♦️, 5♥️, 8♦️, 5♦️, A♠️, 5♥️, 5♣️, 10♥️, 4♦️, 5♦️, Q♦️]\n\n\n\ndraw_n(13, replace=False)\n\n[8♥️, 6♠️, 8♣️, Q♣️, 3♣️, 7♦️, 2♣️, Q♥️, A♥️, 2♥️, 4♦️, 8♦️, 4♥️]"
+  }
+]
